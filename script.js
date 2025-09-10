@@ -2,6 +2,7 @@
 // AIC-58: Testing Linear integration with GitHub
 // Another test modification for sync verification
 // AIC-58: PR test for Linear integration
+// AIC-60: Dark mode functionality
 document.addEventListener('DOMContentLoaded', function() {
     // Mobile menu toggle
     const burger = document.querySelector('.burger');
@@ -159,6 +160,38 @@ document.addEventListener('DOMContentLoaded', function() {
             }, 600);
         });
     });
+
+    // AIC-60: Dark mode toggle functionality
+    const themeToggle = document.getElementById('theme-toggle');
+    const body = document.body;
+    
+    // Load saved theme
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+        body.classList.add(savedTheme);
+        updateThemeIcon(savedTheme);
+    }
+    
+    themeToggle.addEventListener('click', function() {
+        body.classList.toggle('dark-mode');
+        const isDark = body.classList.contains('dark-mode');
+        
+        // Save theme preference
+        localStorage.setItem('theme', isDark ? 'dark-mode' : '');
+        
+        // Update icon
+        updateThemeIcon(isDark ? 'dark-mode' : '');
+        
+        // Add animation effect
+        this.style.transform = 'rotate(360deg)';
+        setTimeout(() => {
+            this.style.transform = 'rotate(0deg)';
+        }, 300);
+    });
+    
+    function updateThemeIcon(theme) {
+        themeToggle.textContent = theme === 'dark-mode' ? '☀️' : '🌙';
+    }
 });
 
 // Form submission handler
