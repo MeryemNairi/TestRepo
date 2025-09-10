@@ -1,4 +1,5 @@
 // DOM Content Loaded
+// AIC-58: Testing Linear integration with GitHub
 document.addEventListener('DOMContentLoaded', function() {
     // Mobile menu toggle
     const burger = document.querySelector('.burger');
