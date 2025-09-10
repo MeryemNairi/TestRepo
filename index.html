@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Site Simple</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>MonSite</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#apropos">À propos</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="accueil" class="hero">
+            <div class="hero-content">
+                <h2>Bienvenue sur mon site</h2>
+                <p>Un site web simple et élégant créé avec HTML, CSS et JavaScript</p>
+                <button class="cta-button" onclick="scrollToSection('apropos')">Découvrir</button>
+            </div>
+        </section>
+
+        <section id="apropos" class="about">
+            <div class="container">
+                <h2>À propos</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Ce site web démontre l'utilisation des technologies web modernes pour créer une expérience utilisateur fluide et responsive.</p>
+                        <p>Il utilise HTML5 sémantique, CSS3 avec Flexbox et Grid, et JavaScript vanilla pour l'interactivité.</p>
+                    </div>
+                    <div class="about-image">
+                        <div class="placeholder-image">
+                            <span>Image</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services">
+            <div class="container">
+                <h2>Services</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">🌐</div>
+                        <h3>Développement Web</h3>
+                        <p>Création de sites web modernes et responsives</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">📱</div>
+                        <h3>Applications Mobile</h3>
+                        <p>Développement d'applications pour iOS et Android</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🎨</div>
+                        <h3>Design UI/UX</h3>
+                        <p>Conception d'interfaces utilisateur intuitives</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Contact</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Informations de contact</h3>
+                        <p>📧 contact@monsite.com</p>
+                        <p>📞 +33 1 23 45 67 89</p>
+                        <p>📍 123 Rue de la Paix, Paris</p>
+                    </div>
+                    <form class="contact-form" onsubmit="handleFormSubmit(event)">
+                        <input type="text" placeholder="Votre nom" required>
+                        <input type="email" placeholder="Votre email" required>
+                        <textarea placeholder="Votre message" rows="5" required></textarea>
+                        <button type="submit">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 MonSite. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
