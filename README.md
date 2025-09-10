@@ -70,4 +70,6 @@ Ce projet est libre d'utilisation pour des fins éducatives et personnelles.
 
 ## Test d'intégration Linear
 - Issue AIC-58: Test de synchronisation avec Linear
-- Commit: 0b7a877
+- Issue AIC-60: Nouvelle fonctionnalité mode sombre
+- Commits: 0b7a877, f12f58c
+- Branches: feature/aic-58-test, AIC-60/nouvelle-fonctionnalite
