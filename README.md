@@ -67,3 +67,7 @@ Vous pouvez facilement personnaliser :
 
 Ce projet est libre d'utilisation pour des fins éducatives et personnelles.
 # TestRepo
+
+## Test d'intégration Linear
+- Issue AIC-58: Test de synchronisation avec Linear
+- Commit: 0b7a877
