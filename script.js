@@ -1,6 +1,7 @@
 // DOM Content Loaded
 // AIC-58: Testing Linear integration with GitHub
 // Another test modification for sync verification
+// AIC-58: PR test for Linear integration
 document.addEventListener('DOMContentLoaded', function() {
     // Mobile menu toggle
     const burger = document.querySelector('.burger');
